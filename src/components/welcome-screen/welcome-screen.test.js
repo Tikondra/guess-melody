@@ -8,6 +8,7 @@ it(`Render Welcome-screen`, function () {
         <WelcomeScreen
           errorCount={3}
           time={5}
+          onWelcomeButtonClick={() => {}}
         />
     )
     .toJSON();
