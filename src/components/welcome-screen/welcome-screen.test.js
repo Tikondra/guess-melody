@@ -6,7 +6,7 @@ it(`Render Welcome-screen`, function () {
   const tree = renderer
     .create(
         <WelcomeScreen
-          errorCount={3}
+          errorsCount={3}
           time={5}
           onWelcomeButtonClick={() => {}}
         />
