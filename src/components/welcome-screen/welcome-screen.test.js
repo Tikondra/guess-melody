@@ -8,7 +8,7 @@ it(`Render Welcome-screen`, function () {
         <WelcomeScreen
           errorsCount={3}
           time={5}
-          onWelcomeButtonClick={() => {}}
+          onWelcomeButtonClick={jest.fn()}
         />
     )
     .toJSON();

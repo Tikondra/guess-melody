@@ -3,11 +3,7 @@ import PropTypes from "prop-types";
 import {GameType} from "../../mocks/constants";
 
 const ArtistQuestionScreen = (props) => {
-  const {onAnswer, question} = props;
-  const {
-    answers,
-    song,
-  } = question;
+  const {onAnswer, question, question: {answers, song}} = props;
 
   return (
     <section className="game game--artist">

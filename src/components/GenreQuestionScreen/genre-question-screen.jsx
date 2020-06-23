@@ -1,6 +1,7 @@
 import React, {PureComponent} from "react";
 import PropTypes from "prop-types";
 import {GameType} from "../../mocks/constants";
+import {nanoid} from "nanoid";
 
 class GenreQuestionScreen extends PureComponent {
   constructor(props) {
@@ -49,7 +50,7 @@ class GenreQuestionScreen extends PureComponent {
             }}
           >
             {answers.map((answer, i) => (
-              <div key={`${i}-${answer.src}`} className="track">
+              <div key={nanoid()} className="track">
                 <button className="track__button track__button--play" type="button"/>
                 <div className="track__status">
                   <audio

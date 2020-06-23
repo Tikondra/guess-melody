@@ -16,7 +16,7 @@ exports[`Render Welcome-screen 1`] = `
   </div>
   <button
     className="welcome__button"
-    onClick={[Function]}
+    onClick={[MockFunction]}
   >
     <span
       className="visually-hidden"

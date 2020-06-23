@@ -1,5 +1,6 @@
 import React from "react";
 import {configure, shallow} from "enzyme";
+import {mockArtist} from "../../mocks/for-test";
 import Adapter from "enzyme-adapter-react-16";
 
 import ArtistQuestionScreen from "./artist-question-screen.jsx";
@@ -7,29 +8,8 @@ import ArtistQuestionScreen from "./artist-question-screen.jsx";
 configure({adapter: new Adapter()});
 
 const mock = {
-  question: {
-    type: `artist`,
-    song: {
-      artist: ``,
-      src: ``
-    },
-    answers: [
-      {
-        artist: `one`,
-        picture: `pic-one`,
-      },
-      {
-        artist: `two`,
-        picture: `pic-two`,
-      },
-      {
-        artist: `three`,
-        picture: `pic-three`,
-      },
-    ],
-  }
+  question: mockArtist,
 };
-
 
 const mockEvent = {
   preventDefault() {}
@@ -40,8 +20,8 @@ it(`Click on user answer should pass to the callback data-object from which this
   const {question} = mock;
   const onAnswer = jest.fn();
   const userAnswer = {
-    artist: `one`,
-    picture: `pic-one`,
+    artist: `John Snow`,
+    picture: `https://api.adorable.io/avatars/128/0`,
   };
 
   const screen = shallow(<ArtistQuestionScreen
