@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/app/app.jsx";
-import {Settings} from "./mocks/constants";
+import {Settings} from "./constants";
 import questions from "./mocks/questions";
 
 const init = () => {

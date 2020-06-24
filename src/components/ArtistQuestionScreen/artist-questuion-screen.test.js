@@ -8,7 +8,10 @@ it(`ArtistQuestionScreen is rendered correctly`, () => {
       <ArtistQuestionScreen
         question={mockArtist}
         onAnswer={jest.fn()}
-      />
+        renderPlayer={jest.fn()}
+      />, {
+        createNodeMock: () => ({})
+      }
   ).toJSON();
 
   expect(tree).toMatchSnapshot();

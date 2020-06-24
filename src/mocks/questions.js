@@ -6,16 +6,16 @@ export default [
     genre: `rock`,
     answers: [
       {
-        src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+        src: `music/bensound-adaytoremember.mp3`,
         genre: `rock`,
       }, {
-        src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+        src: `music/bensound-summer.mp3`,
         genre: `blues`,
       }, {
-        src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+        src: `music/bensound-psychedelic.mp3`,
         genre: `jazz`,
       }, {
-        src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+        src: `music/bensound-happyrock.mp3`,
         genre: `rock`,
       }
     ],
@@ -24,7 +24,7 @@ export default [
     type: `artist`,
     song: {
       artist: `Jim Beam`,
-      src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+      src: `music/bensound-rumble.mp3`,
     },
     answers: [
       {
