@@ -6,7 +6,7 @@ import GameScreen from "../game-screen/game-screen.jsx";
 import GenreQuestionScreen from "../GenreQuestionScreen/genre-question-screen.jsx";
 import {Switch, Route, BrowserRouter} from "react-router-dom";
 import {GameType} from "../../constants";
-import withAudioPlayer from "../../hocs/with-audio-player";
+import withAudioPlayer from "../../hocs/with-audio-player/with-audio-player";
 
 const GenreQuestionScreenWrapped = withAudioPlayer(GenreQuestionScreen);
 const ArtistQuestionScreenWrapped = withAudioPlayer(ArtistQuestionScreen);

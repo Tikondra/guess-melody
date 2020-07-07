@@ -14,9 +14,12 @@ it(`AudioPlayer is rendered correctly`, () => {
 
   const tree = renderer.create(<AudioPlayer
     isPlaying={false}
+    isLoading={true}
     onPlayButtonClick={jest.fn()}
     src={song.src}
-  />, {
+  >
+    <audio />
+  </AudioPlayer>, {
     createNodeMock: () => ({})
   })
     .toJSON();
