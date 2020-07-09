@@ -6,10 +6,11 @@ import GameScreen from "../game-screen/game-screen.jsx";
 import GenreQuestionScreen from "../GenreQuestionScreen/genre-question-screen.jsx";
 import {Switch, Route, BrowserRouter} from "react-router-dom";
 import {GameType} from "../../constants";
-import withAudioPlayer from "../../hocs/with-audio-player/with-audio-player";
+import withActivePlayer from "../../hocs/with-active-player/with-active-player.js";
+import withUserAnswer from "../../hocs/with-user-answer/with-user-answer.js";
 
-const GenreQuestionScreenWrapped = withAudioPlayer(GenreQuestionScreen);
-const ArtistQuestionScreenWrapped = withAudioPlayer(ArtistQuestionScreen);
+const GenreQuestionScreenWrapped = withActivePlayer(withUserAnswer(GenreQuestionScreen));
+const ArtistQuestionScreenWrapped = withActivePlayer(ArtistQuestionScreen);
 
 class App extends PureComponent {
   constructor(props) {

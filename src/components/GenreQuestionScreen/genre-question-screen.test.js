@@ -8,7 +8,9 @@ it(`GenreQuestionScreen is rendered correctly`, () => {
     <GenreQuestionScreen
       question={mockGenre.question}
       onAnswer={jest.fn()}
+      onChange={jest.fn()}
       renderPlayer={jest.fn()}
+      userAnswers={[false, false, false, false]}
     />
   ), {
     createNodeMock: () => ({})
